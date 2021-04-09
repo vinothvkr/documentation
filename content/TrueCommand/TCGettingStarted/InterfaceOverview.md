@@ -19,7 +19,7 @@ When accessing the interface for the first time you will need to create an admin
 
 * The admin login credentials will be created and you will be presented with the login page.
 
-![TrueCommand Admin Sign In](/images/TrueCommand/1.3/LoginAdmin.png "TrueCommand Admin Sign In")
+![TrueCommand Admin Sign In](/images/TrueCommand/2.0/LoginAdmin.png "TrueCommand Admin Sign In")
 
 You can now log in to the TrueCommand web interface with the new administrator account credentials.
 
@@ -31,11 +31,11 @@ TrueCommand 1.3.1 introduced the ability to customize the alert colors to user p
 The Theme pallet is located in the top banner on the right.
 To open the theme configuration menu, click the <i class="material-icons" aria-hidden="true" title="Palette">palette</i> icon.
 
-![ThemeSelect](/images/TrueCommand/1.3/ThemeSelect.png "Theme Select")
+![ThemeSelect](/images/TrueCommand/2.0/ThemePallete.png "Theme Select")
 
 To change a color, click on the color to open a selection menu. Select the desired color or enter its HEX color value.
 
-![ThemeCustomize](/images/TrueCommand/1.3/ThemeCustomize.png "Theme Customize")
+![ThemeCustomize](/images/TrueCommand/2.0/ThemePalleteCustom.png "Theme Customize")
 
 To remove changes and revert to the currently saved settings, click *Reset*.
 To reset all colors to the application defaults, click *Defaults*.
