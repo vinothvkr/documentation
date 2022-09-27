@@ -1,8 +1,12 @@
 #available icons: https://github.com/thegeeklab/hugo-geekdoc/tree/master/src/icons
 ---
 more:
+  - name: Security Reports
+    ref: "https://security.truenas.com"
+    external: true
+    icon: "gdoc_shield"
   - name: Documentation Archive
-    ref: "https://truenas.com/docs/archive/"
+    ref: "/archive"
     external: true
     icon: "gdoc_bookmark"
   - name: "View Source"

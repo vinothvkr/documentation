@@ -15,7 +15,7 @@ TrueCommand can monitor an entire fleet of TrueNAS systems and thousands of onli
 ## What Features does TrueCommand have?
 
 {{< expand "Multiple Deployment Options" "v" >}}
-TrueCommand is a lightweight application that supports deployments in either a Virtual Machine or a Docker Container.
+TrueCommand docker container can be deployed as a VM since vhdk and vmdk are no longer supported in version 2.0.
 TrueCommand Cloud is also available as a cloud-based subscription option that allows you to offload TrueCommand resources and deployment and only focus on fine-tuning your configuration.
 {{< /expand >}}
 {{< expand "NAS Fleet Dashboard" "v" >}}
@@ -70,4 +70,4 @@ TrueCommand Cloud subscriptions are available at the [iXsystems Account Services
 
 TrueCommand Cloud is a secure SaaS offering that includes a WireGuard VPN capability to connect TrueNAS systems through firewalls.
 TrueCommand Cloud is compatible with TrueNAS versions **12.0+ or SCALE** for the Wireguard VPN capability.
-Subscribe to and set up TrueCommand Cloud using [these instructions]({{< relref "/TrueCommand/InstallUpdate/Install.md" >}}).
+Subscribe to and set up TrueCommand Cloud using [these instructions]({{< relref "/TrueCommand/TCGettingStarted/Install/_index.md" >}}).

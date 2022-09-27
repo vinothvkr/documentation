@@ -1,6 +1,8 @@
 ---
 title: "RMA Policy"
 weight: 10
+aliases:
+  - /hardware/notices/rma-policy/
 ---
 
  All warranted systems inherit the iXsystems RMA policy. The details of the policy vary depending upon the type of system and whether or not it is located in the continental US.
@@ -20,5 +22,5 @@ Advanced Replacement; customer responsible for returning failed component (no sh
 For additional info, please contact the iXsystems Support team at any time!
 
 {{< expand "Contacting iXsystems Support" "v" >}}
-{{< include file="static/includes/iXsystemsSupportContact.html.part" html="true" >}}
+{{< include file="static/includes/General/iXsystemsSupportContact.html.part" html="true" >}}
 {{< /expand >}}

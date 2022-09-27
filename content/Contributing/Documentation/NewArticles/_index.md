@@ -1,6 +1,12 @@
 ---
 title: "Adding a New Article"
+description: "This article describes how to contribute a new article to the TrueNAS documentation."
 weight: 20
+tags:
+- corecontributing
+- scalecontributing
+- corearticle
+- scalearticle
 ---
 
 {{< toc >}}
@@ -50,7 +56,7 @@ Be sure to have unique names for each image file.
 
 ## Uploading the Article Bundle
 
-Open the [User Recommendations]({{< relref "/CORE/UserRecommends/_index.md" >}}) section of the repository.
+Open the [User Recommendations]({{< ref "/CORE/CORETutorials/CommunityGuides/_index.md" >}}) section of the repository.
 
 ![UploadImages](/images/Contribute/UploadingNewArticleBundle.png "Uploading Images")
 
@@ -76,4 +82,6 @@ The link to this preview is added to the Pull Request after the build completes.
 
 ![ArticlePreview](/images/Contribute/NewArticlePreview.png "Article Preview")
 
-Other contributors will review and merge your article!
+Other contributors will review and merge your article!  
+
+{{< taglist tag="corecontributing" limit="10" >}}

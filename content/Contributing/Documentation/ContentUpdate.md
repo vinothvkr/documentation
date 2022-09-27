@@ -1,6 +1,12 @@
 ---
 title: "Updating Content"
+description: "This article describes how to contribute changes to the TrueNAS documentation."
 weight: 10
+tags:
+- corecontributing
+- scalecontributing
+- corecontentupdate
+- scalecontentupdate
 ---
 
 {{< toc >}}
@@ -15,6 +21,8 @@ The link to this preview site is added to the PR as a comment.
 The preview updates with any changes to the pull request, so you can always see an accurate preview of the changes you're making to the website.
 
 ## Making Quick Changes to an Article
+
+{{< embed-video name="docsquickedit" >}}
 
 If you find text that needs to be fixed or improved in an article, click *Edit this page* to view the article source text in a new browser tab.
 To check your changes for bugs in the Markdown or HTML syntax, switch to the **Preview changes** tab.
@@ -40,22 +48,22 @@ Some article content comes from a separate *include* statement.
 This statement pulls in content from a different location and allows using common text in many different website article simultaneously.
 Updating an <file>include/</file> file updates the content in every single affected article!
 
-An example of this is in the [Cron Jobs]({{< relref "CronJobs.md" >}}) article.
+An example of this is in the [Cron Jobs]({{< relref "/CORE/CORETutorials/Tasks/CreatingCronJobs.md" >}}) article.
 The expandable *Advanced Scheduler* content is pulled from another location in the repository (<file>static/includes/AdvancedScheuler.md.part</file>).
-The <file>AdvancedScheuler.md.part</file> is included in the [Cloud Sync Tasks]({{< relref "CloudSyncTasks.md" >}}) and other **Tasks** content.
+The <file>AdvancedScheuler.md.part</file> is included in the [Cloud Sync Tasks]({{< relref "/CORE/CORETutorials/Tasks/CreatingCloudSyncTasks.md" >}}) and other **Tasks** content.
 
 Clicking the *Edit this Page* link opens the article markdown file, but only these lines are visible for the included content (the `/` characters are added to prevent rendering the shortcodes):
 ```
 {{/< expand "Advanced Scheduler" "v" >}}
-{{/< include file="static/includes/AdvancedScheduler.md.part" markdown="true" >}}
+{{/< include file="static/includes/CORE/AdvancedScheduler.md.part" markdown="true" >}}
 {{/< /expand >}}
 ```
 
 The *expand* and */expand* shortcodes handle the expansion/collapse section of the document and don't need to change.
 The include statement is within the expandable element:
-`{{/< include file="static/includes/AdvancedScheduler.md.part" markdown="true" >}}`.
+`{{/< include file="static/includes/CORE/AdvancedScheduler.md.part" markdown="true" >}}`.
 
-The [repository](https://github.com/truenas/documentation/) file <file>static/includes/AdvancedScheduler.md.part</file> contains the documentation for this section.
+The [repository](https://github.com/truenas/documentation/) file <file>static/includes/CORE/AdvancedScheduler.md.part</file> contains the documentation for this section.
 To update this section, edit the <file>.md.part</file> file.
 Remember that this snippet file is used in multiple documents, so only content that generally applies is included in the snippet.
 Changes that are specific to a certain piece of content are added directly to that article.
@@ -118,4 +126,6 @@ As part of the review process, automation builds a preview of the Docs site with
 When the build is completed, a comment appears in the PR that shows the automation result.
 Click on *Show all checks* and *Details* to see a live demo of the site with your changes.
 
-![PullRequestSummary](/images/Contribute/GitHubPullRequestSummary.png)
+![PullRequestSummary](/images/Contribute/GitHubPullRequestSummary.png)  
+
+{{< taglist tag="corecontributing" limit="10" >}}

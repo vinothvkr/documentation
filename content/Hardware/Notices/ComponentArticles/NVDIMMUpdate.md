@@ -5,7 +5,7 @@ weight: 10
 
 **April 13, 2021**
 
-TrueNAS M-Series users are strongly recommended to update to [TrueNAS 12.0-U3]({{< relref "12.0U3.md" >}}) to minimize the potential impact of a NVDIMM firmware bug that may not save ZIL/SLOG contents on a power failure.
+TrueNAS M-Series users are strongly recommended to update to TrueNAS 12.0-U3 or newer to minimize the potential impact of a NVDIMM firmware bug that may not save ZIL/SLOG contents on a power failure.
 
 NVDIMM (Non-Volatile Dual Inline Memory Module) is the primary Write Cache (ZFS SLOG or ZIL) for TrueNAS M-Series. It stores incoming data prior to it being written to the ZFS pool with its data protection. On a dual controller system (HA), each Write is stored on the NVDIMM of the active controller and then mirrored to the NVDIMM on the standby controller. On power failure or power loss, the NVDIMM saves the contents of DRAM to its flash devices. NVDIMM is used because it is the fastest (very low latency) and most reliable Write Cache available.
 
@@ -30,4 +30,4 @@ If a NVDIMM firmware change is needed, it is important to note that the multi-st
 
 By moving to TrueNAS 12.0-U3, many TrueNAS systems will be updating to TrueNAS 12.0 which has now been through extensive field testing and has received very positive reviews. The 12.0 version has been successfully deployed on over two hundred TrueNAS HA systems and provides additional features and performance improvements. Some production users have reported significant performance gains (>30%) by upgrading from 11.3 to 12.0.
 
-{{< include file="static/includes/iXsystemsSupportContact.html.part" html="true" >}}
+{{< include file="static/includes/General/iXsystemsSupportContact.html.part" html="true" >}}

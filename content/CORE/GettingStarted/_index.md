@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 geekdocCollapseSection: true
-weight: 20
+weight: 10
 ---
 
 <div style="float: left;margin-right: 1rem;">
@@ -10,7 +10,18 @@ weight: 20
 
 </div>
 
-This section guides you through installing and accessing TrueNAS, storing and backing up data, sharing data over a network, and expanding TrueNAS with different applications solutions.
+This guide introduces TrueNAS and walks you through installing and accessing TrueNAS, storing and backing up data, sharing data over a network, and expanding TrueNAS with different applications solutions.
 
-For more detailed interface reference articles, configuration instructions, and tuning recommendations, see the remaining sections in this topic.
-Content sections are organized by order of appearance in the web interface.
+{{< expand "Table of Contents (click to expand)" "v" >}}
+
+{{< children depth="2" >}}
+
+{{< /expand >}}
+
+## CORE Documentation Sections
+
+For more detailed interface reference articles, configuration tutorials, and tuning recommendations, see the remaining sections in the CORE topic.
+
+{{< include file="/_includes/COREDocsSections.md" type="page" >}}
+
+{{< include file="static/includes/General/MenuNav.md.part" markdown="true" >}}
